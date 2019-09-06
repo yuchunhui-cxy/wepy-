@@ -1,0 +1,127 @@
+<template>
+  <view>
+    <yuchunhui></yuchunhui>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy';
+  import { PX_TO_RPX } from '@/utils/constant';
+  import yuchunhui from '@/components/yuchunhui/share';
+  import api from '@/utils/api';
+
+  const { $Toast } = require('../../iview/base/index');
+
+  export default class Home extends wepy.page {
+    config = {
+      'usingComponents': {
+        'i-toast': '../../iview/toast/index',
+          //子组件使用了父亲必须引入,这样才生效,孩子不需要引入
+          "i-icon": "../../iview/icon/index"
+      }
+    };
+
+      //写这个这个页面才是可以允许的右上角转发的
+      // 子组件本身不需要写,写了也没用,还是走我的,不需要通信也自动调用我的这个方法
+      onShareAppMessage(res) {
+          if (res.from === 'button') {
+              // 来自页面内转发按钮
+              console.log(1111,res.target)
+          }else{
+              console.log("来自右上角的11111")
+          }
+          return {
+              title: '自定义转发标题',
+              // 必须是/开头的完整路径
+              path: '/pages/index/test',
+          }
+      }
+    components = {
+      yuchunhui
+    };
+
+    data = {
+      px2rpxWidth: '',
+      px2rpxHeight: '',
+      fileUrl: '',
+      // 雇佣id
+      employCode: '',
+      // 所有数据
+      res: '',
+      // 工作福利
+      benefits: [],
+      // 轮播图
+      detailImg: '',
+      // 我是谁
+      userCode: ''
+
+
+    };
+
+    computed = {};
+
+    methods = {};
+
+    events = {};
+
+    // 获取信息
+    async getEmployDetail(index) {
+      let that = this;
+      let res = await api.getEmployDetail({ query: { employCode: this.employCode, userCode: this.userCode } });
+      this.res = res;
+      this.$apply();
+      // 工作福利
+      this.benefits = res.benefits.split(',');
+      this.$apply();
+      // 轮播图
+      this.detailImg = res.img.split(',');
+      this.$apply();
+
+    };
+
+    // 报名
+    async addUserEmploy(index) {
+      let that = this;
+      let res = await api.addUserEmploy({ query: { employCode: this.employCode, userCode: this.userCode } });
+      if (res) {
+        $Toast({
+          content: '报名成功',
+          type: 'success'
+        });
+        this.getEmployDetail();
+      } else {
+        $Toast({
+          content: '报名失败',
+          type: 'error'
+        });
+      }
+    };
+
+
+    async onLoad(options) {
+      // // 雇佣id
+      // this.employCode = options.employCode;
+      // let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+      // this.px2rpxWidth = px2rpx.px2rpxWidth;
+      // this.px2rpxHeight = px2rpx.px2rpxHeight;
+      //
+      // this.fileUrl = api.uploadFileUrl;
+      // //保存我是谁
+      // let me = this;
+      // wx.getStorage({
+      //   key: 'userInfo',
+      //   success(res) {
+      //     me.userCode = res.data.user_code;
+      //     me.$apply();
+      //     me.getEmployDetail();
+      //   }
+      // });
+      // this.$apply();
+    }
+  }
+</script>
+<style lang="less">
+  Page {
+    background: #F7F7F7;
+  }
+</style>

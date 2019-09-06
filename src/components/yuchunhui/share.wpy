@@ -1,0 +1,73 @@
+<style lang="less">
+    button:hover{
+        background: rgba(255,255,255,0);
+    }
+    button::after{
+        border:none;
+    }
+</style>
+<template>
+    <view>
+
+        <view style="display: flex;justify-content: flex-end;align-items: center;height: 50px;">
+            <view style="width: 50px;height: 40px;">
+                <button open-type="share" style="width: 100%;height: 40px;">
+                    <i-icon type="activity" size="28" color="#80848f" />
+                </button>
+
+            </view>
+            <view style="">于春辉</view>
+        </view>
+
+        <i-toast id="toast"/>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import {PX_TO_RPX} from '@/utils/constant';
+    const { $Toast } = require('../../iview/base/index');
+
+    export default class Home extends wepy.component {
+        config = {
+            'usingComponents': {
+                'i-toast': '../../iview/toast/index',
+                // "i-icon": "../../iview/icon/index"
+            }
+        };
+        components = {
+        };
+
+        data = {
+            px2rpxWidth: '',
+            px2rpxHeight: '',
+        };
+        computed = {};
+
+        methods = {
+            btn(){
+                wx.showToast({
+                    title: '成功',
+                    icon: 'success',
+                    duration: 2000
+                })
+                // $Toast({
+                //      content: '点赞成功',
+                //      type: 'success'
+                //  });
+            }
+        };
+
+        events = {};
+
+
+
+        async onLoad() {
+            let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+            this.px2rpxWidth = px2rpx.px2rpxWidth;
+            this.px2rpxHeight = px2rpx.px2rpxHeight;
+            this.$apply();
+        }
+    }
+</script>
+

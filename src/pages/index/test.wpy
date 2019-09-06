@@ -1,0 +1,156 @@
+<template>
+    <view>
+        <view class="search">
+            <view class="input">
+                <view class="img" style="width:{{w*60}}px;height:{{w*54}}px;">
+                    <image @tap="" src="../../static/home/search1.png" mode="widthFix"></image>
+                </view>
+                <input value="{{keyWord}}" style="width:{{w*540}}px;height:{{w*54}}px;" placeholder="" @input=""/>
+            </view>
+            <view class="cancel" @tap="">取消</view>
+        </view>
+
+        <view style="margin-top: 110rpx">
+            <view style="width: 100rpx;background: red;height: 100rpx;"></view>
+            <view style="width: 100px;background: blue;height: 100px;"></view>
+            <view style="width:{{w*100}}px;background: green;height: 100px;"></view>
+            <!--测试通信的组件,加上:和sync才可以传变量,并且改变父亲儿子会跟着变-->
+            <tongxin :title.sync="title"></tongxin>
+            父亲我自己的值:{{title}}
+            <button @tap="change_give_zi">改变给子组件的值</button>
+            <button @tap="test_watch">测试深度watch</button>
+            <input placeholder="这是一个可以自动聚焦的input" value="{{title}}" auto-focus/>
+            <button @tap="go_fenbao">跳到分包的页面</button>
+        </view>
+
+
+
+
+
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import { PX_TO_RPX } from '@/utils/constant';
+    import b from "@/components/yuchunhui/left-right-swiper"
+    import tongxin from "@/components/yuchunhui/test_tongxin"
+
+    export default class Home extends wepy.page {
+        config = {
+            'usingComponents': {
+                'i-toast': '../../iview/toast/index',
+                "i-icon": "../../iview/icon/index",
+            }
+        };
+        components = {
+            b,
+            tongxin
+        };
+
+        data = {
+            w: '',
+            h: '',
+            title: "1",
+            a:{
+                b:1
+            }
+        };
+
+        computed = {};
+
+        methods = {
+            change_give_zi(){
+                this.title = "2"
+            },
+            test_watch(){
+                this.a.b = 3
+            },
+            go_fenbao(){
+                wx.redirectTo({
+                    url: `/package/pages/fenbao/index?id=${this.title}`
+                })
+            }
+
+        };
+
+        events = {};
+        // 转发
+        onShareAppMessage(res) {
+            if (res.from === 'button') {
+                // 来自页面内转发按钮
+                console.log(res.target)
+            }else{
+                console.log("来自右上角的1")
+            }
+            return {
+                title: '自定义转发标题',
+                // 必须是/开头的完整路径
+                path: '/pages/index/test',
+            }
+        }
+
+        watch = {
+            a(n){
+                console.log(n.b)
+            }
+        }
+
+        async onLoad() {
+            wx.getLocation({
+                type: 'wgs84',
+                success (res) {
+                    const latitude = res.latitude
+                    const longitude = res.longitude
+                    const speed = res.speed
+                    const accuracy = res.accuracy
+                }
+            })
+            let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+            this.w = px2rpx.px2rpxWidth;
+            this.h = px2rpx.px2rpxHeight;
+            this.$apply();
+        }
+    }
+</script>
+<style lang="less">
+    /*搜索*/
+    .search {
+        width: 100%;
+        height: 100rpx;
+        background: linear-gradient(#F56250, #F55067);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        .input {
+            width: 600rpx;
+            display: flex;
+            margin-left: 30rpx;
+            .img {
+                background: #FFF;
+                border-radius: 20rpx 0 0 20rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    width: 30rpx;
+                }
+            }
+            input {
+                background: #FFF;
+                border-radius: 0 20rpx 20rpx 0;
+                font-size: 24rpx;
+            }
+
+        }
+        .cancel {
+            font-size: 24rpx;
+            color: #FFFFFF;
+            margin-right: 24rpx;
+        }
+    }
+
+
+</style>

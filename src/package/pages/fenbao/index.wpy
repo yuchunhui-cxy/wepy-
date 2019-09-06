@@ -1,0 +1,55 @@
+<style lang="less">
+
+</style>
+<template>
+    <view>
+        我是分包的页面
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import { PX_TO_RPX } from '@/utils/constant';
+    import api from '@/utils/api';
+
+    export default class Home extends wepy.page {
+        config = {
+            //全局虽然允许下拉,但是我自己不允许
+            enablePullDownRefresh: false,
+        };
+
+        components = {};
+
+        data = {
+            w: '',
+            h: '',
+            fileUrl: api.f
+        };
+        watch = {};
+
+        computed = {};
+
+        methods = {};
+
+        events = {};
+
+        // 上拉加载
+        onReachBottom() {
+        };
+
+        // 下拉刷新
+        onPullDownRefresh() {
+            wx.stopPullDownRefresh();
+
+        }
+
+        async onLoad(options) {
+            //前一个页面跳转过来传的参数
+            console.log(options)
+            let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+            this.w = px2rpx.px2rpxWidth;
+            this.h = px2rpx.px2rpxHeight;
+            this.$apply();
+        }
+    }
+</script>

@@ -1,0 +1,52 @@
+<template>
+    <view>
+        <swiper circular previous-margin="100rpx" next-margin="100rpx" bindchange="handleChange" style="width:100%;height:200px;">
+            <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8,9]}}" wx:key="{{index}}">
+                <view style="position: relative;margin: 0 10rpx;{{currentIndex==index? 'height:100%':'height:80%;top:10%'}}">
+                    <image src="../../static/home/bg.png" style="width: 100%;height: 100%;"></image>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import { PX_TO_RPX } from '@/utils/constant';
+    import api from '@/utils/api';
+
+    export default class Home extends wepy.component {
+        config = {
+        };
+
+        components = {
+        };
+
+        data = {
+            px2rpxWidth: '',
+            px2rpxHeight: '',
+            fileUrl:api.uploadFileUrl,
+            currentIndex:0
+        };
+
+        computed = {};
+
+        methods = {
+            handleChange: function(e) {
+                this.currentIndex = e.detail.current;
+            }
+        };
+
+        events = {};
+
+        async onLoad() {
+            let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+            this.px2rpxWidth = px2rpx.px2rpxWidth;
+            this.px2rpxHeight = px2rpx.px2rpxHeight;
+            this.$apply();
+        }
+    }
+</script>
+<style lang="less">
+
+</style>

@@ -1,0 +1,100 @@
+<style lang="less">
+</style>
+
+<script>
+    import wepy from 'wepy';
+    import 'wepy-async-function';
+    import { USER_INFO, PX_TO_RPX } from '@/utils/constant';
+
+    export default class extends wepy.app {
+        config = {
+            "usingComponents": {},
+            pages: [
+                'pages/index/test',
+                'pages/index/map',
+
+                'pages/index/job',          //招聘页面
+                //于
+            ],
+            'subPackages': [
+                {
+                    'root': 'package',
+                    'pages': [
+                        'pages/fenbao/index',
+                    ]
+                }
+            ],
+            // 'preloadRule': {
+            //     'pages/starHome/starHome': {
+            //         'network': 'all',
+            //         'packages': ['pages/user/']
+            //     }
+            // },
+            //获取地理位置必须要的
+            'permission': {
+                'scope.userLocation': {
+                    'desc': '小程序位置接口的效果展示111'
+                }
+            },
+            window: {
+                //允许下拉
+                enablePullDownRefresh: true,
+                //下拉的颜色只有黑白
+                backgroundTextStyle: 'dark',
+                //导航栏背景粉色
+                navigationBarBackgroundColor: '#FF99CC',
+                //导航栏文字
+                navigationBarTitleText: '星芽',
+                //导航栏文字颜色只有黑白
+                navigationBarTextStyle: 'white',
+            },
+            tabBar: {
+                //最少俩个,最多五个
+                "list": [
+                    {
+                        "pagePath": "pages/index/test",
+                        "iconPath":"./static/home/bg.png",
+                        "selectedIconPath":"./static/home/men.png",
+                        "text":"主页"
+                    },
+                    {
+                        "pagePath": "pages/index/job",
+                        "text":"最少俩"
+                    },
+                    {
+                        "pagePath":'pages/index/map',
+                        "text":"最多五个"
+                    }
+                ],
+                // 文字默认颜色是绿色的
+                color:"#66FF66",
+                //选中是红色的
+                selectedColor:"#FF0033",
+                backgroundColor:'#CCC',
+                borderStyle:"white",
+                // 仅支持上下
+                position:"bottom"
+            }
+        };
+
+        globalData = {
+            userInfo: null
+        };
+
+        // constructor() {
+        //     super();
+        //     this.use('promisify');
+        //     this.use('requestfix');
+        // }
+
+        onLaunch() {
+            // 获取页面信息
+            let systemInfo = wepy.getSystemInfoSync();
+            //存入页面宽高比例
+            wepy.setStorageSync(PX_TO_RPX, {
+                px2rpxWidth: systemInfo.windowWidth / 750,
+                px2rpxHeight: systemInfo.screenHeight / 1334
+            });
+        }
+    }
+</script>

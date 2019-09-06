@@ -1,0 +1,46 @@
+<template>
+    <view>
+        <scroll-view scroll-x style="white-space: nowrap">
+            <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:key="{{index}}"
+                  style="width:{{w*100}}px;height:{{w*100}}px;display: inline-block;margin:{{w*15}}px">
+                <image src="../../static/home/bg.png" style="width: 100%;height:100%;"></image>
+            </view>
+        </scroll-view>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import { PX_TO_RPX } from '@/utils/constant';
+    import api from '@/utils/api';
+
+    export default class Home extends wepy.page {
+        config = {
+        };
+        components = {
+        };
+
+        data = {
+            w: '',
+            h: '',
+            fileUrl:api.uploadFileUrl,
+            list:[],
+        };
+
+        computed = {};
+
+        methods = {};
+
+        events = {};
+
+        async onLoad() {
+            let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+            this.w = px2rpx.px2rpxWidth;
+            this.h = px2rpx.px2rpxHeight;
+            this.$apply();
+        }
+    }
+</script>
+<style lang="less">
+
+</style>

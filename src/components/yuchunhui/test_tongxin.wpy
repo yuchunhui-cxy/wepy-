@@ -1,0 +1,73 @@
+<style lang="less">
+
+</style>
+<template>
+    <view>
+        <button @tap="btn">把父亲传过来的值变成3</button>
+        子组件显示:{{title}}
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import { PX_TO_RPX } from '@/utils/constant';
+    import api from '@/utils/api';
+
+    export default class Home extends wepy.component {
+        config = {};
+
+        components = {};
+        props = {
+            // 静态传值
+            // title: String,
+
+            // 父向子单向动态传值
+            title: {
+                type: String,
+                default: 'null',
+                //加上这个之后能改变父亲的值
+                twoWay: true
+            },
+
+            // title: {
+            //     type: String,
+            //     default: 'nothing',
+            //     twoWay: true
+            // }
+        };
+
+        data = {
+            w: '',
+            h: '',
+            fileUrl: api.f
+        };
+        watch = {};
+
+        computed = {};
+
+        methods = {
+            btn(){
+                this.title = 3
+            }
+        };
+
+        events = {};
+
+        // 上拉加载
+        onReachBottom() {
+        };
+
+        // 下拉刷新
+        onPullDownRefresh() {
+            wx.stopPullDownRefresh();
+
+        }
+
+        async onLoad() {
+            let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+            this.w = px2rpx.px2rpxWidth;
+            this.h = px2rpx.px2rpxHeight;
+            this.$apply();
+        }
+    }
+</script>

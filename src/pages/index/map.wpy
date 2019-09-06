@@ -1,0 +1,148 @@
+<template>
+    <view>
+        <map show-location class="map" id="myMap" scale="18" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" circles="{{circles}}" polyline="{{polyline}}">
+            <cover-image @tap="moveToLocation" class="place_info" src="../../static/home/women.png" style="width: 50rpx;height: 50rpx;">
+            </cover-image>
+        </map>
+
+        <!--<button type="primary" bindtap="getCenterLocation">获取位置</button>-->
+        <!--<button type="primary" bindtap="moveToLocation">移动位置</button>-->
+        <!--<button type="primary" bindtap="translateMarker">移动标注</button>-->
+        <!--<button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button>-->
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import {PX_TO_RPX} from '@/utils/constant';
+
+    //import ClassifyStore from '@/components/classifystore';
+
+    export default class Home extends wepy.page {
+        config = {
+            //navigationBarTitleText: '',
+        };
+        components = {
+            //classifystore: ClassifyStore
+        };
+
+        data = {
+            px2rpxWidth: '',
+            px2rpxHeight: '',
+            mapCtx:'',
+            latitude: "",
+            longitude: "",
+            markers:[],
+            circles:[],
+            polyline:[]
+
+
+        };
+
+        computed = {};
+
+        methods = {
+            moveToLocation(){
+                console.log(1111)
+                this.mapCtx.moveToLocation()
+            }
+        };
+
+        events = {};
+
+        async onLoad() {
+
+            this.mapCtx = wx.createMapContext('myMap')
+
+            var that = this;
+            wx.getLocation({
+                type: 'gcj02',
+                success: function (res) {
+                    that.latitude = res.latitude
+                    that.longitude = res.longitude
+                    that.markers = [{
+                                id: "1",
+                                latitude: res.latitude+0.0007,
+                                longitude: res.longitude+0.0007,
+                                width: 20,
+                                height: 20,
+                                iconPath: "../../static/home/men.png",
+                                callout:{
+                                    content:"这里有红包",
+                                    color:"#FF0000DD",
+                                    fontSize:"24rpx",
+                                    display:"ALWAYS"
+                                }
+                            },
+                        {
+                            id: "2",
+                            latitude: res.latitude+0.0010,
+                            longitude: res.longitude+0.0010,
+                            width: 20,
+                            height: 20,
+                            iconPath: "../../static/home/men.png",
+                        },
+                        {
+                            id: "3",
+                            latitude: res.latitude+0.0020,
+                            longitude: res.longitude+0.0020,
+                            width: 20,
+                            height: 20,
+                            iconPath: "../../static/home/men.png",
+                            label:{
+                                content:"这里也有红包",
+                                color:"green",
+                                fontSize:"24rpx",
+                            }
+                        }]
+                    that.circles = [{
+                        latitude: res.latitude,
+                        longitude: res.longitude,
+                        color: '#FF0000DD',
+                        fillColor: '#7cb5ec88',
+                        radius: 30,
+                        strokeWidth: 1
+                    }]
+                    that.polyline = [{
+                        points:[
+                            {
+                                latitude: res.latitude+0.0005,
+                                longitude: res.longitude+0.0005,
+
+                            }, {
+                                latitude: res.latitude+0.0020,
+                                longitude: res.longitude+0.0020,
+                            }
+                        ],
+                        color:"#FF0000DD",
+                        width:2,
+                        dottedLine:true,
+
+                    }]
+                    that.$apply()
+                    console.log(that.polyline)
+                }
+            })
+
+
+            let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+            this.px2rpxWidth = px2rpx.px2rpxWidth;
+            this.px2rpxHeight = px2rpx.px2rpxHeight;
+
+            this.$apply();
+            console.log(px2rpx);
+        }
+    }
+</script>
+<style lang="less">
+    .map{
+        width: 100%;
+        height: 500rpx;
+    }
+    .place_info {
+        position: relative;
+        top: 15rpx;
+        left: 15rpx;
+    }
+
+</style>

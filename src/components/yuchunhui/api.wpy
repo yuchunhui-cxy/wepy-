@@ -1,0 +1,105 @@
+<template>
+    <view>
+        <button open-type="share">转发</button>
+        <i-toast id="toast"/>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import { PX_TO_RPX } from '@/utils/constant';
+
+    const { $Toast } = require('../../iview/base/index');
+
+    export default class Home extends wepy.page {
+        config = {
+            // 下拉刷新
+            enablePullDownRefresh: true,
+            // 下拉的颜色
+            backgroundTextStyle: 'light',
+            // 导航栏背景颜色
+            navigationBarBackgroundColor: '#000',
+            // 导航栏标题字体颜色
+            navigationBarTextStyle: 'white',
+
+            // 子组件使用iview要在父组件中引入
+            // 'usingComponents': {
+            //     'i-toast': '../../iview/toast/index',
+            // }
+        };
+        components = {
+        };
+
+        data = {
+            px2rpxWidth: '',
+            px2rpxHeight: ''
+        };
+
+        computed = {};
+
+        // 上拉加载
+        onReachBottom() {
+        };
+
+        // 下拉刷新
+        onPullDownRefresh() {
+            wx.stopPullDownRefresh()
+
+        }
+
+
+
+        methods = {
+            btn(){
+                $Toast({
+                    content: '点赞成功',
+                    type: 'success'
+                });
+            }
+        };
+
+        events = {};
+
+
+
+
+        // 在onLoad之后触发,下一个页面每次点返回也会触发
+        async onShow() {
+        };
+
+        // 关闭当前页面出发
+        async onUnload() {
+        }
+
+        // 只刚开始触发一次
+        async onLoad() {
+            // 存strong的值
+            wx.setStorage({
+                key: 'key',
+                data: 'value'
+            })
+
+            // 取strong的值
+            let me = this
+            wx.getStorage({
+                key: 'key',
+                success(res) {
+                    // me.user_type = res.data.type;
+                }
+            });
+
+            // 动态设置标题
+            wx.setNavigationBarTitle({
+                title: "111"
+            });
+
+            let px2rpx = await wepy.getStorageSync(PX_TO_RPX);
+            this.px2rpxWidth = px2rpx.px2rpxWidth;
+            this.px2rpxHeight = px2rpx.px2rpxHeight;
+            this.$apply();
+        }
+    }
+</script>
+<style lang="less">
+
+</style>

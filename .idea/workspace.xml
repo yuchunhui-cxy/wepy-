@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c7441efd-f7e5-4b0a-bd21-8f506a0a36b3" name="Default Changelist" comment="完善tabbar" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1849373912">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="36" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="3" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.open.time.90" value="1" />
+          <entry key="project.opened" value="37" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="editorconfig" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="2" />
+          <entry key="js" value="139" />
+          <entry key="json" value="9" />
+          <entry key="prettierrc" value="1" />
+          <entry key="ts" value="2" />
+          <entry key="vue" value="1" />
+          <entry key="wepycache" value="1" />
+          <entry key="wepyignore" value="1" />
+          <entry key="wpy" value="856" />
+          <entry key="wxml" value="1" />
+          <entry key="wxss" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+          <entry key="JSON" value="10" />
+          <entry key="JavaScript" value="139" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="TypeScript" value="2" />
+          <entry key="Vue.js" value="857" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="2059" />
+          <entry key="json" value="24" />
+          <entry key="txt" value="112" />
+          <entry key="vue" value="2" />
+          <entry key="wpy" value="49830" />
+          <entry key="wxss" value="23" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="24" />
+          <entry key="JavaScript" value="2060" />
+          <entry key="PLAIN_TEXT" value="135" />
+          <entry key="Vue.js" value="49831" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test.wpy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/index/test.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="128" column="26" lean-forward="false" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#view#1;n#view#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#1221#1245#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabbar.wpy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/tabbar.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#1067#1091#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="share.wpy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/share.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+              <folding>
+                <element signature="e#633#657#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_tongxin.wpy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/test_tongxin.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swiper-scrollView.wpy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/swiper-scrollView.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+              <folding>
+                <element signature="e#861#885#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.wpy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/api.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="e#136#160#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.wpy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="981">
+              <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.wpy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/map.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding>
+                <element signature="e#737#761#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scrollView.wpy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/scrollView.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+              <folding>
+                <element signature="e#432#456#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="XSLT Stylesheet" />
+        <option value="Wepy File Page" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>current</find>
+      <find>addfocusOn</find>
+      <find>percent</find>
+      <find>img</find>
+      <find>p-r</find>
+      <find>fff</find>
+      <find>currentIndex</find>
+      <find>carousel</find>
+      <find>cancel</find>
+      <find>this.flag</find>
+      <find>medi</find>
+      <find>i-tabs</find>
+      <find>arena</find>
+      <find>i-progress-inner</find>
+      <find>w10</find>
+      <find>bottom</find>
+      <find>px2rpxHeight</find>
+      <find>cropper</find>
+      <find>use</find>
+      <find>pagePath</find>
+      <find>special-text-wrapper</find>
+      <find>tabbar_box</find>
+      <find>setStorageSync</find>
+      <find>permission</find>
+      <find>changeImg</find>
+      <find>handleChange</find>
+      <find>$invoke</find>
+      <find>distinguish</find>
+      <find>tabbar</find>
+      <find>search</find>
+    </findStrings>
+    <dirStrings>
+      <dir>F:\传清科技\于春辉微信小程序组件</dir>
+      <dir>F:\传清科技\于春辉微信小程序组件\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/pages/login/identityProveB.wpy" />
+        <option value="$PROJECT_DIR$/src/utils/weixin.js" />
+        <option value="$PROJECT_DIR$/src/pages/release/release.wpy" />
+        <option value="$PROJECT_DIR$/src/components/user/dialog.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/user/personalCenter/changePic.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/user/dynamic/dynamicAdd.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/user/collection/collectionA.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/userParents/user.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/user/joinActivity/activityD.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/activity/influential_people/influential_people.wpy" />
+        <option value="$PROJECT_DIR$/src/components/user/userDynamic.wpy" />
+        <option value="$PROJECT_DIR$/src/components/user/userWork.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/user/messageCenter.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/user/collection/collectionD.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/user/personalCenter/changeProve.wpy" />
+        <option value="$PROJECT_DIR$/src/utils/api.js" />
+        <option value="$PROJECT_DIR$/src/pages/user/personalCenter/bindEmail.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/user/personalCenter/setOpinion.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/activity/activity-field.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/activity/activity.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/starHome/starHome.wpy" />
+        <option value="$PROJECT_DIR$/src/components/focus_heat_tabbar.wpy" />
+        <option value="$PROJECT_DIR$/src/iview/tabs/index.wxss" />
+        <option value="$PROJECT_DIR$/src/iview/progress/index.wxss" />
+        <option value="$PROJECT_DIR$/src/pages/detail/detail.wpy" />
+        <option value="$PROJECT_DIR$/src/utils/tip.js" />
+        <option value="$PROJECT_DIR$/src/utils/wxRequest.js" />
+        <option value="$PROJECT_DIR$/src/components/content.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/index/search_demo.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/square/square.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/detail/company.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/detail/introduction.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/detail/swiper.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/swiper.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/index/list.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/detail/wangluo.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/tabbar.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/map.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/api.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/scrollView.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/swiper-scrollView.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/left-right-swiper.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/share.wpy" />
+        <option value="$PROJECT_DIR$/src/components/yuchunhui/test_tongxin.wpy" />
+        <option value="$PROJECT_DIR$/src/package/pages/fenbao/index.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/index/student.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/index/job.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/index/search_swiper.wpy" />
+        <option value="$PROJECT_DIR$/src/app.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/index/test.wpy" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="683" />
+    <option name="height" value="727" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="于春辉微信小程序组件" type="b2602c69:ProjectViewProjectNode" />
+              <item name="于春辉微信小程序组件" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\传清科技\于春辉微信小程序组件\src\pages\index" />
+      <recent name="F:\于春辉微信小程序组件\src\iview" />
+      <recent name="F:\于春辉微信小程序组件\src\pages\index" />
+      <recent name="F:\于春辉微信小程序组件\src\components\yuchunhui" />
+      <recent name="F:\新建文件夹\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\于春辉微信小程序组件\src\pages\list" />
+      <recent name="F:\于春辉微信小程序组件\src\components\yuchunhui" />
+      <recent name="H:\star\miniStar\XyWeChat\src\components" />
+      <recent name="H:\star\miniStar\XyWeChat\src\components\welcome" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\wangrongrong\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7441efd-f7e5-4b0a-bd21-8f506a0a36b3" name="Default Changelist" comment="" />
+      <created>1553745195357</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553745195357</updated>
+      <workItem from="1553745198954" duration="7711000" />
+      <workItem from="1553756696799" duration="8471000" />
+      <workItem from="1553821906793" duration="20573000" />
+      <workItem from="1554081019092" duration="14826000" />
+      <workItem from="1554100376336" duration="10587000" />
+      <workItem from="1554167979300" duration="21435000" />
+      <workItem from="1554255133599" duration="25236000" />
+      <workItem from="1554340132612" duration="18162000" />
+      <workItem from="1554687747785" duration="24919000" />
+      <workItem from="1554771937091" duration="12601000" />
+      <workItem from="1554859547069" duration="19904000" />
+      <workItem from="1554945683107" duration="24435000" />
+      <workItem from="1555031373122" duration="26738000" />
+      <workItem from="1555290467286" duration="24442000" />
+      <workItem from="1555377012311" duration="26376000" />
+      <workItem from="1555462469451" duration="19931000" />
+      <workItem from="1555549753312" duration="23486000" />
+      <workItem from="1555635909483" duration="27014000" />
+      <workItem from="1555855018058" duration="111000" />
+      <workItem from="1555855582739" duration="763000" />
+      <workItem from="1555895015152" duration="22744000" />
+      <workItem from="1555981557996" duration="30860000" />
+      <workItem from="1556068041810" duration="27508000" />
+      <workItem from="1556154256907" duration="31663000" />
+      <workItem from="1556240511154" duration="31071000" />
+      <workItem from="1556330702893" duration="446000" />
+      <workItem from="1556347747087" duration="34105000" />
+      <workItem from="1556413547094" duration="17189000" />
+      <workItem from="1556500593345" duration="16890000" />
+      <workItem from="1556586375094" duration="6282000" />
+      <workItem from="1557018151254" duration="1782000" />
+      <workItem from="1557020407239" duration="25193000" />
+      <workItem from="1557105109519" duration="5443000" />
+      <workItem from="1557129612305" duration="7322000" />
+      <workItem from="1557191818068" duration="16963000" />
+      <workItem from="1557278052482" duration="26607000" />
+      <workItem from="1557363836626" duration="5164000" />
+      <workItem from="1557379213245" duration="46006000" />
+      <workItem from="1557727340721" duration="781000" />
+      <workItem from="1557728154291" duration="11595000" />
+      <workItem from="1557813752619" duration="6000" />
+      <workItem from="1557813835089" duration="360000" />
+      <workItem from="1557814360429" duration="5436000" />
+      <workItem from="1557821928416" duration="52000" />
+      <workItem from="1557905675838" duration="23258000" />
+      <workItem from="1558053990112" duration="24356000" />
+      <workItem from="1558341683280" duration="545000" />
+      <workItem from="1558399626186" duration="1811000" />
+      <workItem from="1567401891413" duration="628000" />
+      <workItem from="1567405866232" duration="5174000" />
+      <workItem from="1567473206329" duration="17727000" />
+      <workItem from="1567561380026" duration="8886000" />
+      <workItem from="1567649699799" duration="2888000" />
+      <workItem from="1567653746463" duration="1916000" />
+      <workItem from="1567673581355" duration="1157000" />
+      <workItem from="1567730472883" duration="4253000" />
+    </task>
+    <task id="LOCAL-00001" summary="修改tabbar">
+      <created>1553756144877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553756144877</updated>
+    </task>
+    <task id="LOCAL-00002" summary="完善tabbar">
+      <created>1553841385610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553841385611</updated>
+    </task>
+    <task id="LOCAL-00003" summary="完善tabbar">
+      <created>1553841419249</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1553841419249</updated>
+    </task>
+    <task id="LOCAL-00004" summary="添加登录一系列页面">
+      <created>1554183646365</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554183646365</updated>
+    </task>
+    <task id="LOCAL-00005" summary="登录与我的模块">
+      <created>1554861885289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554861885289</updated>
+    </task>
+    <task id="LOCAL-00006" summary="启动页为starHome--引入tabbar--引入首页五个页面（由page换成组件）--我的模块--完善封装weRequest">
+      <created>1555573371299</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555573371299</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="821788000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24450952" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改tabbar" />
+    <MESSAGE value="完善tabbar" />
+    <MESSAGE value="添加登录一系列页面" />
+    <MESSAGE value="登录与我的模块" />
+    <MESSAGE value="启动页为starHome--引入tabbar--引入首页五个页面（由page换成组件）--我的模块--完善封装weRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="启动页为starHome--引入tabbar--引入首页五个页面（由page换成组件）--我的模块--完善封装weRequest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pages/activity/activity.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/iview/progress/index.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="275" lean-forward="false" selection-start-line="0" selection-start-column="259" selection-end-line="0" selection-end-column="275" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iview/tabs/index.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/user/purseCoin.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index1.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/components/content.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/detail/company.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/components/wepy-com-cropper.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/detail/detail.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/detail/introduction.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/components/focus_heat_tabbar.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/components/focus_contact_tabbar.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/square/square.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/a.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/iview/load-more/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/list.wpy" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/home/men.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/identityProveA.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/login/bindPhone.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/iview/icon/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/detail/wangluo.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/components/welcome.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/index.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/starHome/starHome.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/package/pages/fenbao/index.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#106#130#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/tip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/calculate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/weixin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="115" column="33" lean-forward="true" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/wxRequest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/search_demo.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/index/search_swiper.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/index/student.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/pages/index/job.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1567">
+          <caret line="122" column="19" lean-forward="false" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+          <folding>
+            <element signature="e#82#106#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/map.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="9" />
+          <folding>
+            <element signature="e#738#762#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/tabbar.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/left-right-swiper.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <element signature="e#567#591#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/map.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="e#737#761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/scrollView.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#432#456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/share.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="e#633#657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/swiper-scrollView.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="e#861#885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/tabbar.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#1067#1091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/test_tongxin.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/yuchunhui/api.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#136#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="981">
+          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mixins/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/detail.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1275">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/test.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="128" column="26" lean-forward="false" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#1;n#view#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#1221#1245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
